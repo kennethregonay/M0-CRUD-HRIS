@@ -24,6 +24,11 @@ body{
     margin: auto;
     overflow: hidden;
 }
+
+.success{
+    background-color: lightgreen;
+    padding: 1em;
+}
 /*Navigation Design*/
 nav {
     display: flex;
@@ -170,7 +175,7 @@ fieldset{
   font-size: 15px; 
   border: 0px;
   background: green;
-  color:wheat;
+  color:white;
   cursor: pointer;
   border-radius: 3px;
   outline: none;
