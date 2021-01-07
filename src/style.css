@@ -97,8 +97,7 @@ nav {
     text-align: center;
 }
 .inputfield input,textarea {
-    text-transform: uppercase;
-    font-family: 'Red Rose', cursive;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:black;
     font-size: small;
 }
@@ -150,7 +149,7 @@ nav {
   border: 1px solid #333;
   border-radius: 3px;
    font-family: 'Red Rose', cursive;
-    color: #24254c;
+    color: black
 }
 .wrapper .form .inputfield .input:focus,
 .wrapper .form .inputfield .textarea:focus,
@@ -181,24 +180,70 @@ fieldset{
   outline: none;
     margin: 10px;
 }
-.wrapper .form .inputfield  .btn-r{
+ .btn-u{
   width: 100%;;
    padding: 8px 10px;
   font-size: 15px; 
   border: 0px;
-  background :orangered;
+  background :blueviolet;
   color: wheat;
   cursor: pointer;
   border-radius: 3px;
   outline: none;
   margin: 10px;
+  text-decoration: none;
+}
+.btn-d{
+    width: 100%;;
+   padding: 8px 10px;
+  font-size: 15px; 
+  border: 0px;
+  background :red;
+  color: wheat;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+  margin: 10px;
+  text-decoration: none;
 }
 
-
-
-
-
-
+/*Table Design*/
+.table-c{
+    width: 100%;
+    margin-left: auto;
+    padding: 5px;
+    justify-content: space-around;
+    min-height: 600px;
+}
+.table {
+    border-collapse:collapse;
+    margin: 25px 0;
+    font-size: 0 9em;
+    min-width: 400px;
+    border:black;
+    position: relative;
+}
+.table thead tr{
+    background-color: tomato;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
+    border: 2px solid black ;
+}
+.table th,
+.table td{
+    padding: 10px 25px;
+    text-transform: capitalize;
+    align-content: center;
+    width: max-content;
+}
+.table tbody tr {
+    border: 1px solid #24254c;
+}
+.table tbody tr:last-of-type{
+    border-bottom: 2px solid #24254c;
+}
 
 /*Footer Design*/
 footer{
