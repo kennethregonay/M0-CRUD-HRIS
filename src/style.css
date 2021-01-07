@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@600&display=swap');
 
+/*initial Design | Configuration*/
 *{
   padding: 0px;
   margin: 0px;
@@ -13,15 +14,26 @@ body{
 }
 
 
+.content {
+    min-height: 600px;
+  padding: 20px;
+  width: 80%;
+  overflow: hidden;
+}
 
-
+.container{
+        width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
 /*Navigation Design*/
 nav {
     display: flex;
     justify-content: space-around;
-    min-height: 8vh;
+    min-height: 7vh;
     background-color: #24254c;
     padding-top: 10px;
+    transition: all .5s ease; 
 }
 
 .logo a {
@@ -47,11 +59,67 @@ nav {
     color: #ffffff;
     text-decoration: none;
     font-weight: lighter;
-    font-size: 15px;
+    font-size: 16px;
+    transition: all .5s ease; 
 }
 .nav-links a:hover{
     color: tomato;
 }
+
+
+/*footer Design*/
+footer{
+    background: #24254c;
+    color: #ffffff;
+    text-align: center;
+    min-height: fit-content;
+    margin: auto;
+    overflow: hidden;
+    transition: all .5s ease; 
+}
+
+footer .socials{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+footer .socials a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0px 12px;
+    transition: all .5s ease; 
+    padding: 20px;
+}
+footer .socials a:hover{
+    color: tomato;
+}
+
+.copyright p {
+    float:left;
+    padding: 0px;
+    width: 100%;
+}
+.copyright p:first-child{
+    padding-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Responsive and mobile view Design*/
 .mobile-view{
@@ -64,8 +132,6 @@ nav {
     background-color: #fff;
     margin: 5px;
 }
-
-/*Responsive*/
 @media screen and (max-width:1024px){
    .nav-links{
        width: 60%;
