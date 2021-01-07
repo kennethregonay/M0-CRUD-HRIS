@@ -8,8 +8,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD PROJECT</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/4752a58f75.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <?php include ('header.php');
@@ -71,7 +69,6 @@
     </fieldset>
 </div>
 </div>
-
 <?php include ('footer.php')?>
 </body>
 </html>
