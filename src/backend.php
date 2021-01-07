@@ -1,3 +1,4 @@
+
 <?php 
       $connection = new mysqli('localhost','root', '' , 'hris') 
     or die(mysqli_error($connection));
@@ -12,15 +13,19 @@
             $gender = 'F'; 
         }
         
-        $bdate = $_POST ['bdate']; 
+        $bdate = $_POST ['bdate'];  
         $poscode = $_POST ['poscode'];  
         $connection->query("INSERT INTO employee(Firstname,Middlename,Lastname,Address,Gender,Birthdate,Position_Code) 
         VALUES ('$fname','$mname','$lname','$address','$gender','$bdate','$poscode')")
         or die ($connection->error);
         prompt(".success","Record is Successfully Saved!");
-
     }
-
+    if (isset($_GET['delete'])){
+        $id = $_GET['delete'];
+          $connection->query("DELETE FROM employee WHERE EmployeeID = $id")
+        or die ($connection->error);
+        prompt(".Delete","Record is Successfully Deleted!");
+    }
     function prompt($class,$msg){
         $element = "<h5 class='$class'>$msg</h5>";
         echo $element;
