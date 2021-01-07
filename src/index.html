@@ -15,13 +15,13 @@
     </div>
     <ul class="nav-links">
           <li>
-            <a href="#" class="href"><i class="fas fa-building"></i>DEPARTMENT TABLE</a>
+            <a href="#" class="href"><i class="fas fa-address-card"></i>EMPLOYEE</a>
         </li>
          <li>
-            <a href="#" class="href"><i class="far fa-id-badge"></i>POSITION TABLE </a>
+            <a href="#" class="href"><i class="far fa-id-badge"></i>POSITION</a>
         </li>
           <li>
-            <a href="#" class="href"><i class="far fa-id-badge"></i>DEVELOPER</a>
+            <a href="#" class="href"><i class="far fa-building"></i>DEPARTMENT</a>
         </li>
     </ul>
     <div class="mobile-view">
@@ -29,12 +29,68 @@
         <div class="line2"></div>
         <div class="line3"></div>
 </nav>
-
 <!--Content Part-->
 <div class="content">
-
+<!--Form-->
+<div class="wrapper">
+  <fieldset>
+    <div class="title">
+      Employee Information
+    </div>
+    <div class="form" >
+      <form  method="POST">
+        <div class="inputfield">
+          <label>First Name</label>
+          <input type="text" class="input" required name="fname">
+       </div>  
+        <div class="inputfield">
+          <label>Middle Name</label>
+          <input type="text" class="input" name="mname">
+       </div>  
+       <div class="inputfield">
+          <label>Last Name</label>
+          <input type="text" class="input" required name="lname">
+       </div>  
+      <div class="inputfield">
+          <label>Address</label>
+          <textarea class="textarea" required name="address"></textarea>
+       </div> 
+        <div class="inputfield">
+          <label>Gender</label>
+          <div class="custom_select">
+            <select required name="gender">
+              <option value="">SELECT</option>
+              <option value="male">MALE</option>
+              <option value="female">FEMALE</option>
+            </select>
+          </div>
+       </div> 
+        <div class="inputfield">
+          <label>BirthDate</label>
+          <input type="date" class="input" required name="bdate" id="mydate"
+          value="2021-12-27">
+       </div> 
+      <div class="inputfield">
+          <label>Position Code</label>
+          <input type="number" class="input" required name="poscode">
+       </div> 
+       <div class="btn">
+       <div class="create">
+       <div class="inputfield">
+        <input type="submit" value="CREATE" name = 'create' class="btn-c">
+        </div>
+       </div>
+      <div class="read">     
+      <div class="inputfield">
+        <input type="submit" value="VIEW" name = 'read' class="btn-r">
+    </div>  
+    </div>
+    </div>
+    </div>
+  </form>
+    </fieldset>
 </div>
-
+</div>
 
 <!---Footer-->
 <footer> 
