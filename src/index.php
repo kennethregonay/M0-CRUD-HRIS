@@ -22,22 +22,22 @@
     </div>
     <div class="form">
       <form  method="POST">
-        <input type="hidden" name= "id" value = "<?php echo $id;?>">
+        <input type="hidden" name= "id" value = "">
         <div class="inputfield">
           <label>First Name</label>
-          <input type="text" class="input" required name="fname" value = "<?php echo $fname;?>">
+          <input type="text" class="input" required name="fname" value = "">
        </div>  
         <div class="inputfield">
           <label>Middle Name</label>
-          <input type="text" class="input" name="mname" value = "<?php echo $mname;?>">
+          <input type="text" class="input" name="mname" value = "">
        </div>  
        <div class="inputfield">
           <label>Last Name</label>
-          <input type="text" class="input" required name="lname" value = "<?php echo $lname;?>">
+          <input type="text" class="input" required name="lname" value = "">
        </div>  
       <div class="inputfield">
           <label>Address</label>
-          <textarea class="textarea" required name="address" value = "<?php echo $address;?>"></textarea>
+          <textarea class="textarea" required name="address" value = ""></textarea>
        </div> 
         <div class="inputfield">
           <label>Gender</label>
@@ -59,15 +59,12 @@
           <input type="number" class="input" required name="poscode">
        </div> 
        <div class="btn">
-         <?php if ($update_state==false):?>
        <div class="inputfield">
         <input type="submit" value="CREATE" name = 'create' class="btn-c">
         </div>
-        <?php else:?>
        <div class="inputfield">
-        <input type="submit" value="UPDATE" name = 'update' class="btn-c">
+        <input type="submit" value="UPDATE" name = 'update' class="btn-u">
         </div>
-      <?php endif ?>
       </div>
     </div>
     </div>
