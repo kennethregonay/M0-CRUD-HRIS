@@ -62,9 +62,6 @@
        <div class="inputfield">
         <input type="submit" value="CREATE" name = 'create' class="btn-c">
         </div>
-       <div class="inputfield">
-        <input type="submit" value="UPDATE" name = 'update' class="btn-u">
-        </div>
       </div>
     </div>
     </div>

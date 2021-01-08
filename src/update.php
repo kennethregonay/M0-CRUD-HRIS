@@ -1,8 +1,7 @@
 <?php 
     include 'backend.php';
 ?>
-
-
+ 
 <?php 
     if (isset($_GET['update'])){
         $id =$_GET['update'];
@@ -36,13 +35,13 @@
             $mname = $_POST ['mname']; 
             $lname = $_POST ['lname']; 
             $address = $_POST ['address']; 
-            if($_POST ['gender']== 'male'){
+            if($_POST ['gender']== 'male'|| $_POST ['gender']== 'MALE'||$_POST ['gender']== 'Male'){
                 $gdr = 'M'; 
             }else{
                 $gdr = 'F'; 
             }
             
-            $bdate = $_POST ['bdate'];  
+           $bdate = $_POST ['bdate'];  
             $poscode = $_POST ['poscode'];  
              
              $sql ="UPDATE employee 
@@ -50,8 +49,8 @@
              Gender = '$gdr',Birthdate='$bdate',Position_Code='$poscode' WHERE EmployeeID = '$id'";
              $connection->query($sql)
             or die ($connection->error);
-            prompt(".success","Record is Successfully Updated!");  
             header('location:employee.php'); 
+            prompt(".success","Record is Successfully Updated!");  
         }
      ?>
 <html>

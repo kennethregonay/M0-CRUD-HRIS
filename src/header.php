@@ -21,7 +21,7 @@ $result_set = $connection->query($query);
             <a href="Position.php" class="href"><i class="far fa-id-badge"></i>POSITION</a>
        </li>
           <li>
-            <a href="#" class="href"><i class="far fa-building"></i>DEPARTMENT</a>
+            <a href="department.php" class="href"><i class="far fa-building"></i>DEPARTMENT</a>
         </li>
     </ul>
     <div class="mobile-view">

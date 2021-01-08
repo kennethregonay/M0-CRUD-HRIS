@@ -10,7 +10,6 @@
             <div class="copyright">
                 <p> &copy; 2021 Regonay CRUD App </p> 
                 <p>All Rights Reserved.</p>
-            </p>
             </div>
         </div>
     </footer>

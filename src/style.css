@@ -6,7 +6,7 @@
   margin: 0px;
   box-sizing: border-box;   
 }
-/*Body Design*/
+/*Body, Container and Content Design | Spacing*/
 body{
     font-family: 'Red Rose',cursive;
     font-size: 16px;
@@ -163,7 +163,6 @@ nav {
 .wrapper .form .inputfield:last-child{
   margin-bottom: 0;
 }
-
 fieldset{
     padding: 20px;
     color: #24254c;
@@ -208,7 +207,7 @@ fieldset{
   text-decoration: none;
 }
 
-/*Department Form*/
+/*Department and Position Form Design*/
 .wrapper-1{
      max-width:500px;
     padding: 50px;
@@ -240,7 +239,7 @@ fieldset{
     text-align: center;
 }
 
-/*Position Table*/
+/*Position and Department Table Design*/
 .table-p{
     width: 100%;
     margin-left: 30px;
@@ -359,21 +358,6 @@ footer .socials a:hover{
 .copyright p:first-child{
     padding-top: 5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*Responsive and mobile view Design*/
 .mobile-view{
