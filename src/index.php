@@ -22,21 +22,22 @@
     </div>
     <div class="form">
       <form  method="POST">
+        <input type="hidden" name= "id" value = "<?php echo $id;?>">
         <div class="inputfield">
           <label>First Name</label>
-          <input type="text" class="input" required name="fname">
+          <input type="text" class="input" required name="fname" value = "<?php echo $fname;?>">
        </div>  
         <div class="inputfield">
           <label>Middle Name</label>
-          <input type="text" class="input" name="mname">
+          <input type="text" class="input" name="mname" value = "<?php echo $mname;?>">
        </div>  
        <div class="inputfield">
           <label>Last Name</label>
-          <input type="text" class="input" required name="lname">
+          <input type="text" class="input" required name="lname" value = "<?php echo $lname;?>">
        </div>  
       <div class="inputfield">
           <label>Address</label>
-          <textarea class="textarea" required name="address"></textarea>
+          <textarea class="textarea" required name="address" value = "<?php echo $address;?>"></textarea>
        </div> 
         <div class="inputfield">
           <label>Gender</label>
@@ -58,11 +59,16 @@
           <input type="number" class="input" required name="poscode">
        </div> 
        <div class="btn">
-       <div class="create">
+         <?php if ($update_state==false):?>
        <div class="inputfield">
         <input type="submit" value="CREATE" name = 'create' class="btn-c">
         </div>
-       </div>
+        <?php else:?>
+       <div class="inputfield">
+        <input type="submit" value="UPDATE" name = 'update' class="btn-c">
+        </div>
+      <?php endif ?>
+      </div>
     </div>
     </div>
   </form>
