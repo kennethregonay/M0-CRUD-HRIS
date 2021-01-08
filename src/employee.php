@@ -18,7 +18,7 @@
     <th>Gender</th>
     <th>BirthDate</th>
     <th>Position_Code</th>
-    <th colspan = "2"></th>
+    <th colspan = "2">Action</th>
   </tr>
 </thead>
 <tbody>  
@@ -36,7 +36,7 @@
       <td><?php echo $row ['Birthdate']; ?></td>
       <td><?php echo $row ['Position_Code']; ?></td>
       <td>
-          <a href="index.php?edit=<?php echo$row['EmployeeID']; ?>" class="btn-u">Edit </a>
+          <a href="index.php?update=<?php echo$row['EmployeeID']; ?>" class="btn-u">Update </a>
           <a href="employee.php?delete=<?php echo$row['EmployeeID']; ?>" class="btn-d">Delete</a>
       </td>
     </tr>
