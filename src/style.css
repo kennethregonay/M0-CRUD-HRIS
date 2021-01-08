@@ -180,18 +180,19 @@ fieldset{
   outline: none;
     margin: 10px;
 }
- .btn-u{
-  width: 100%;;
+  .btn-u{
+  width: 100%;
    padding: 8px 10px;
   font-size: 15px; 
   border: 0px;
-  background :blueviolet;
+  background :#24254c;
   color: wheat;
   cursor: pointer;
   border-radius: 3px;
   outline: none;
   margin: 10px;
   text-decoration: none;
+  font-weight: bold;
 }
 .btn-d{
     width: 100%;;
