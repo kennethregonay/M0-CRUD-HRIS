@@ -28,9 +28,17 @@
         or die ($connection->error);
         prompt(".Delete","Record is Successfully Deleted!");
     }
-
+     if (isset($_GET['deletep'])){
+        $id = $_GET['deletep'];
+          $connection->query("DELETE FROM position WHERE Position_Code = '$id'")
+        or die ($connection->error);
+        prompt(".Delete","Record is Successfully Deleted!");
+    }
     function prompt($class,$msg){
         $element = "<h5 class='$class'>$msg</h5>";
         echo $element;
     }
+
+
+
 ?>

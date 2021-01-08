@@ -208,10 +208,84 @@ fieldset{
   text-decoration: none;
 }
 
+/*Department Form*/
+.wrapper-1{
+     max-width:500px;
+    padding: 50px;
+    float: left;
+    margin-right: 5%;
+}
+.wrapper-1 .form .inputfield:last-child{
+  margin-bottom: 0;
+}
+.wrapper-1 .form .inputfield .btn-c{
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 15px; 
+  border: 0px;
+  background: green;
+  color:white;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+    margin: 10px;
+}
+.wrapper-1 .title{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding:20px;
+    color:#333;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*Position Table*/
+.table-p{
+    width: 100%;
+    margin-left: 30px;
+    padding: 10px;
+    min-height: 500px;
+    justify-content: space-around;
+    padding-top: 70px;
+}
+
+.table-p2{
+    border-collapse:collapse;
+    margin: 25px 0;
+    font-size: 0 9em;
+    min-width: 400px;
+    border:black;
+    position: relative;
+    align-items: center;
+}
+.table-p2 thead tr{
+    background-color: tomato;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
+    border: 2px solid black ;
+}
+.table-p2 th,
+.table-p2 td{
+    padding: 10px 25px;
+    text-transform: capitalize;
+    align-content: center;
+    width: max-content;
+}
+.table-p2 tbody tr {
+    border: 1px solid #24254c;
+}
+.table-p2 tbody tr:last-of-type{
+    border-bottom: 2px solid #24254c;
+}
+
+
 /*Table Design*/
 .table-c{
     width: 100%;
-    margin-left: auto;
+    margin: auto;
     padding: 5px;
     justify-content: space-around;
     min-height: 600px;
@@ -223,6 +297,7 @@ fieldset{
     min-width: 400px;
     border:black;
     position: relative;
+    align-items: center;
 }
 .table thead tr{
     background-color: tomato;
