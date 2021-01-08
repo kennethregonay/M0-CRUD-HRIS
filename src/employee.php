@@ -36,7 +36,7 @@
       <td><?php echo $row ['Birthdate']; ?></td>
       <td><?php echo $row ['Position_Code']; ?></td>
       <td>
-          <a href="index.php?update=<?php echo$row['EmployeeID']; ?>" class="btn-u">Update </a>
+          <a href="update.php?update=<?php echo$row['EmployeeID']; ?>" class="btn-u">Update </a>
           <a href="employee.php?delete=<?php echo$row['EmployeeID']; ?>" class="btn-d">Delete</a>
       </td>
     </tr>
